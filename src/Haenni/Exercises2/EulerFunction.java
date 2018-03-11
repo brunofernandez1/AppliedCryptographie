@@ -10,25 +10,31 @@ import java.util.List;
 public class EulerFunction {
     public static void main(String[] args) {
 
-        System.out.println(isPrime(9));
+        System.out.println(primFactors(541));
 
     }
 
-    public static boolean isPrime(int number){
-        List<Integer> divisibleNumbers = new ArrayList<>();
-        for (int i=number; i>1; i--){
+    public static List<Integer> primFactors(int number){
+        List<Integer> primFactors = new ArrayList<>();
+        for (int i=number-1; i>1; i--){
             int temp = number % i;
             if (temp == 0){
-                divisibleNumbers.add(i);
+                primFactors.add(i);
             }
         }
-        System.out.println(divisibleNumbers);
-        if (divisibleNumbers.isEmpty()){
-            return true;
+        System.out.println(primFactors);
+        if (primFactors.isEmpty()){
+            System.out.println("is prim number");
         }
         else {
-            return false;
+            System.out.println("is not prim number");
         }
+        return primFactors;
+    }
+
+    public static List<Integer> euler(int number){
+        //todo get euler numbers
+        return null;
     }
 
 }
