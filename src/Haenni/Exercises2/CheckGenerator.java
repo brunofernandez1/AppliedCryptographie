@@ -10,6 +10,10 @@ public class CheckGenerator {
         System.out.println(isGenerator(1, 23));
         System.out.println(isGenerator(2, 23));
         System.out.println(isGenerator(3, 23));
+        System.out.println(isGenerator(6, 23));
+        System.out.println(isGenerator(7, 23));
+        System.out.println(isGenerator(8, 23));
+        System.out.println(isGenerator(9, 23));
 
 
 
